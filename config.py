@@ -26,7 +26,7 @@ class Config:
     ADMINS = [int(admin) if re.search('^\d+$', admin) else admin for admin in (ADMIN).split()]
     API_ID = int(os.environ.get("API_ID", ''))
     CHAT = int(os.environ.get("CHAT", ""))
-    LOG_GROUP=os.environ.get("LOG_GROUP", "")
+    LOG_GROUP=os.environ.get("LOG_GROUP", "tvseriezzz_music")
     if LOG_GROUP:
         LOG_GROUP=int(LOG_GROUP)
     else:
@@ -37,6 +37,6 @@ class Config:
     API_HASH = os.environ.get("API_HASH", "")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
     SESSION = os.environ.get("SESSION_STRING", "SESSION")
-    DOWNLOAD_LOCATION = os.environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/")
+    DOWNLOAD_LOCATION = os.environ.get("DOWNLOAD_LOCATION", "tvseriezzz_music")
     playlist=[]
     msg = {}
